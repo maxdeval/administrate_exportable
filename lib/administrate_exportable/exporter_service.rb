@@ -12,7 +12,13 @@ module AdministrateExportable
     end
 
     def csv
-      CSV.generate(headers: true) do |csv|
+      config = {
+        col_sep: ';',
+        row_sep: ';',
+        encoding: 'ISO-8859-1',
+        headers: true
+      }
+      CSV.generate(config) do |csv|
 
         csv << headers
 
