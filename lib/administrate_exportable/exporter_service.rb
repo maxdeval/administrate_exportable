@@ -13,7 +13,7 @@ module AdministrateExportable
 
     def csv
       config = {
-        row_sep: ';',
+        col_sep: ';',
         encoding: 'UTF-8',
         headers: true
       }
