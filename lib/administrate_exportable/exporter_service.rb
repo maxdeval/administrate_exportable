@@ -15,7 +15,7 @@ module AdministrateExportable
       config = {
         col_sep: ';',
         row_sep: ';',
-        encoding: 'ISO-8859-1',
+        encoding: 'UTF-8',
         headers: true
       }
       CSV.generate(config) do |csv|
